@@ -20,7 +20,7 @@ function Game({ pokemonList }) {
     function clickedFunc(pokemon) {
         if (!selected.includes(pokemon.id)) {
             const newScore = score + 1;
-            if (newScore === 1) {
+            if (newScore === 12) {
                 setGameOver(true);
             }
             setSelected([...selected, pokemon.id]);
